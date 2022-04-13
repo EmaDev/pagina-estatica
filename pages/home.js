@@ -1,15 +1,9 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 
 const HomePage = () => {
 
-  const router = useRouter();
   const consola = () => {
     console.log('hello world');
-  }
-
-  const goToPrecios = () => {
-    router.push('/precios/plan-basico');
   }
   
   return (
@@ -20,12 +14,9 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Hola Mundo</h1>
+        <h1>Culii</h1>
         <button onClick={consola}>press me</button>
-
-        <button onClick={goToPrecios}>ver planes</button>
       </main>
-
     </div>
   )
 }
